@@ -17,7 +17,7 @@ pipeline {
         stage('Build') {
             steps {
                 
-                sh 'docker build -t abdullahqobia/finallyirunit:latest .'
+                sh 'docker build -t abdullahqobia/runaway:latest .'
 
                 
             }
@@ -34,7 +34,7 @@ pipeline {
         stage('Push') {
 
 			steps {
-				sh 'docker push abdullahqobia/finallyirunit:latest'
+				sh 'docker push abdullahqobia/runaway:latest'
 			}
 		}
 
